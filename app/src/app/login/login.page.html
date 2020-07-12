@@ -1,0 +1,24 @@
+<ion-content>
+  <div class="container" id="template-1">
+    <div class="header">
+      <div class="title">
+        <!-- <div class="text text-slogan" *ngIf="loginView.header.show == 'name'">{{loginView.header.name.slogan}}</div> -->
+        <!-- <div class="img" ><img [src]="empresa.logo" alt="" srcset="">
+        <div class="text text-title">{{empresa.nombre}}</div> -->
+        <!-- </div> -->
+      </div>
+      <div class="slogan"></div>
+    </div>
+    <div class="form">
+      <div class="my-item">
+        <input type="text" autocomplete="off"  [(ngModel)]="credentials.login" placeholder="Username" name="username" required="true">
+      </div>
+      <div class="my-item">
+        <input type="password" autocomplete="off"  [(ngModel)]="credentials.password" placeholder="Password" name="password" required="true">
+      </div> 
+      <div class="my-item">
+        <button (click)="loginApp()" class="my-btn">Enviar</button>
+      </div> 
+    </div>
+  </div> 
+</ion-content>
