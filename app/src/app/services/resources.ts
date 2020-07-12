@@ -42,6 +42,7 @@ export class ResourcesService {
   }
   logout(){
     window.localStorage.clear();
-    return this.token = null;
+    this.token = null;
+    window.location.replace('/login')
   }
 }
